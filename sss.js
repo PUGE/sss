@@ -21,7 +21,7 @@ function sss (config) {
     // 空处理
     if (!element.el) config[index].rangList = []
   }
-  window.onscroll = function () {
+  function scrollChange () {
     var top = parseInt(document.documentElement.scrollTop || document.body.scrollTop)
     var pre = (top + _this.ch) / _this.sh * 100
     if (_this.dedbugMode) _this.debugBox.innerHTML = `Top: ${top}px<br>Per: ${pre.toFixed(1)}%`
@@ -47,7 +47,7 @@ function sss (config) {
                 break
               }
               case 'y': {
-                styleList.x = valueRnage[0]
+                styleList.y = valueRnage[0]
                 break
               }
             }
@@ -65,7 +65,7 @@ function sss (config) {
                 break
               }
               case 'y': {
-                styleList.x = valueRnage[1]
+                styleList.y = valueRnage[1]
                 break
               }
             }
@@ -98,4 +98,7 @@ function sss (config) {
       }
     }
   }
+  // 初始化计算
+  scrollChange()
+  window.onscroll = scrollChange
 }

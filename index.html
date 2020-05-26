@@ -24,73 +24,233 @@
         margin: 0;
         padding: 0;
       }
-      .show {
-        position: fixed;
-        right: 3%;
-        bottom: 3%;
-        width: 200px;
-        height: 60px;
-        line-height: 60px;
-        font-size: 23px;
-        color: #009fe9;
-        text-align: right;
+      .box {
+        width: 750px;
+        height: 4351px;
+        z-index: 0;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        background-image: url('./image/227.jpg');
       }
+      .so {
+        position: absolute;
+      }
+      .so-0 {
+        left: 0px;
+        top: 0px;
+        z-index: 21;
+      }
+      .so-1 {
+        left: 40px;
+        top: 1066px;
+        z-index: 20;
+      }
+      .so-2 {
+        left: 351px;
+        top: 1088px;
+        z-index: 19;
+      }
+      .so-3 {
+        left: 2px;
+        top: 902px;
+        z-index: 18;
+      }
+      .so-4 {
+        left: 0px;
+        top: 1287px;
+        z-index: 17;
+      }
+      .so-5 {
+        left: 345px;
+        top: 1256px;
+        z-index: 16;
+      }
+      .so-6 {
+        left: 62px;
+        top: 1755px;
+        z-index: 15;
+      }
+      .so-7 {
+        left: 38px;
+        top: 2012px;
+        z-index: 14;
+      }
+      .so-8 {
+        left: 349px;
+        top: 2034px;
+        z-index: 13;
+      }
+      .so-9 {
+        left: 0px;
+        top: 1848px;
+        z-index: 12;
+      }
+      .so-10 {
+        left: 0px;
+        top: 2140px;
+        z-index: 11;
+      }
+      .so-11 {
+        left: 176px;
+        top: 2265px;
+        z-index: 12;
+      }
+      .so-12 {
+        left: 38px;
+        top: 3005px;
+        z-index: 9;
+      }
+      .so-13 {
+        left: 349px;
+        top: 3027px;
+        z-index: 8;
+      }
+      .so-14 {
+        left: 0px;
+        top: 2841px;
+        z-index: 7;
+      }
+      .so-15 {
+        left: 47px;
+        top: 3300px;
+        z-index: 6;
+      }
+      .so-16 {
+        left: 170px;
+        top: 3286px;
+        z-index: 5;
+      }
+      .so-17 {
+        left: 120px;
+        top: 3266px;
+        z-index: 4;
+      }
+      .so-18 {
+        left: 170px;
+        top: 3651px;
+        z-index: 3;
+      }
+      .so-19 {
+        left: 122px;
+        top: 3625px;
+        z-index: 2;
+      }
+      .so-20 {
+        left: 170px;
+        top: 3951px;
+        z-index: 1;
+      }
+      .so-21 {
+        left: 122px;
+        top: 3925px;
+        z-index: 0;
+      }
+
     </style>
     <script src="./sss.js"></script>
     <script>
       setTimeout(() => {
         var showItem = document.querySelector('.show')
-        
-        new sss({
-          debug: true,
-          list: [
-            {
-              el: '.test1',
-              rangList: [
-                [60, 80, {opacity: [0, 100]}],
-              ]
-            }
-          ]
-
-        })
+        new sss([
+          {
+            el: '.so-1',
+            rangList: [
+              [23, 30, {opacity: [0, 1]}],
+              [23, 30, {x: [-200, 0]}],
+            ]
+          },
+          {
+            el: '.so-2',
+            rangList: [
+              [23, 30, {opacity: [0, 1]}],
+              [23, 30, {x: [200, 0]}],
+            ]
+          },
+          {
+            el: '.so-3',
+            rangList: [
+              [23, 30, {opacity: [0, 1]}]
+            ]
+          },
+          {
+            el: '.so-4',
+            rangList: [
+              [29, 40, {x: [-300, 0]}]
+            ]
+          },
+          {
+            el: '.so-5',
+            rangList: [
+              [29, 40, {x: [300, 0]}]
+            ]
+          },
+          {
+            el: '.so-6',
+            rangList: [
+              [40, 50, {y: [100, 0]}]
+            ]
+          },
+          {
+            el: '.so-7',
+            rangList: [
+              [45, 50, {opacity: [0, 1]}],
+              [45, 50, {x: [-200, 0]}],
+            ]
+          },
+          {
+            el: '.so-8',
+            rangList: [
+              [45, 50, {opacity: [0, 1]}],
+              [45, 50, {x: [200, 0]}],
+            ]
+          },
+          {
+            el: '.so-9',
+            rangList: [
+              [45, 50, {opacity: [0, 1]}]
+            ]
+          },
+          {
+            el: '.so-10',
+            rangList: [
+              [56, 70, {opacity: [0, 1]}]
+            ]
+          },
+          {
+            el: '.so-11',
+            rangList: [
+              [56, 70, {x: [600, 0]}]
+            ]
+          },
+        ]).debug()
       }, 500);
-      
     </script>
   </head>
   <body>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1 class="test1">12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
-    <h1>12121212121212</h1>
+    <div class="box">
+      <img class="so so-0" src="./image/192.png"/>
+      <img class="so so-1" src="./image/194.png"/>
+      <img class="so so-2" src="./image/193.png"/>
+      <img class="so so-3" src="./image/12.png"/>
+      <img class="so so-4" src="./image/205.png"/>
+      <img class="so so-5" src="./image/206.png"/>
+      <img class="so so-6" src="./image/195.png"/>
+      <img class="so so-7" src="./image/187.png"/>
+      <img class="so so-8" src="./image/186.png"/>
+      <img class="so so-9" src="./image/58.png"/>
+      <img class="so so-10" src="./image/207.png"/>
+      <img class="so so-11" src="./image/167.png"/>
+      <img class="so so-12" src="./image/189.png"/>
+      <img class="so so-13" src="./image/188.png"/>
+      <img class="so so-14" src="./image/84.png"/>
+      <img class="so so-15" src="./image/184.png"/>
+      <img class="so so-16" src="./image/180.png"/>
+      <img class="so so-17" src="./image/181.png"/>
+      <img class="so so-18" src="./image/174.png"/>
+      <img class="so so-19" src="./image/185.png"/>
+      <img class="so so-20" src="./image/169.png"/>
+      <img class="so so-21" src="./image/171.png"/>
+    </div>
   </body>
 </html>
